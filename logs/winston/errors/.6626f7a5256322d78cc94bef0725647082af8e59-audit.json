@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "G:\\projects\\NEXT LEVEL 2\\Redux\\university-management-core-service\\logs\\winston\\errors\\.6626f7a5256322d78cc94bef0725647082af8e59-audit.json",
+    "files": [
+        {
+            "date": 1693134986290,
+            "name": "G:\\projects\\NEXT LEVEL 2\\Redux\\university-management-core-service\\logs\\winston\\errors\\phu-2023-27-08-17-error.log",
+            "hash": "d9afa90dd2a34aa6317a201fffb1e75424cbc2077c440492a9954903ee0500da"
+        },
+        {
+            "date": 1693155341206,
+            "name": "G:\\projects\\NEXT LEVEL 2\\Redux\\university-management-core-service\\logs\\winston\\errors\\phu-2023-27-08-22-error.log",
+            "hash": "8b1e7a55bb78bc498c8fc2aaf34a5221ab8083f575f3767de22cd665bd2bb309"
+        }
+    ],
+    "hashType": "sha256"
+}
