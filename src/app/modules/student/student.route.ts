@@ -1,7 +1,13 @@
 import express from 'express';
+import validateRequest from '../../middlewares/validateRequest';
 import { StudentController } from './student.controller';
+import { StudentValidation } from './student.validation';
 const router = express.Router();
 
-router.patch('/:id', StudentController.updateIntoDB);
+router.patch(
+  '/:id',
+  validateRequest(StudentValidation.update),
+  StudentController.updateIntoDB
+);
 
 export const studentRoutes = router;
