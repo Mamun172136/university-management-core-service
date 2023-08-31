@@ -16,6 +16,16 @@ const updateIntoDB = async (
   return result;
 };
 
+const deleteFromDB = async (id: string): Promise<Student> => {
+  const result = await prisma.student.delete({
+    where: {
+      id,
+    },
+  });
+  return result;
+};
+
 export const StudentService = {
   updateIntoDB,
+  deleteFromDB,
 };
