@@ -4,7 +4,7 @@ import ApiError from '../../../errors/ApiError';
 import prisma from '../../../shared/prisma';
 
 const insertIntoDB = async (
-  data: OfferedCourseSection
+  data: any
 ): Promise<OfferedCourseSection | null> => {
   const isExistOfferedCourse = await prisma.offeredCourse.findFirst({
     where: {
@@ -19,6 +19,7 @@ const insertIntoDB = async (
     );
   }
 
+  data.semesterRegistrationId = isExistOfferedCourse.semesterRegistrationId;
   const result = await prisma.offeredCourseSection.create({
     data,
   });
